@@ -11,6 +11,8 @@ libraryDependencies += guice
 libraryDependencies += "com.google.api-client" % "google-api-client" % "1.23.0"
 libraryDependencies += "org.scalatestplus.play" %% "scalatestplus-play" % "3.1.2" % Test
 
+libraryDependencies += "com.dripower" %% "play-circe" % "2608.5"
+
 // Adds additional packages into Twirl
 //TwirlKeys.templateImports += "jp.gutio.controllers._"
 
