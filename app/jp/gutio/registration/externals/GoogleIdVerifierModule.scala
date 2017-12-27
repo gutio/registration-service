@@ -1,8 +1,8 @@
-package jp.gutio.externals
+package jp.gutio.registration.externals
 
 import javax.inject.{Inject, Singleton}
 
-import jp.gutio.settings.GoogleIdVerifierSetting
+import jp.gutio.registration.settings.GoogleIdVerifierSetting
 import play.api.{Configuration, Environment}
 import play.api.inject.{ApplicationLifecycle, Module}
 

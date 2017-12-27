@@ -7,7 +7,7 @@ import play.api.mvc._
 import io.circe.generic.auto._
 import io.circe.syntax._
 
-import jp.gutio.externals.{GoogleIdVerifier}
+import jp.gutio.registration.externals.{GoogleIdVerifier}
 
 /**
  * 設定情報レスポンス用コントローラ

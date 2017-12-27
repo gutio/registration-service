@@ -1,9 +1,9 @@
-package jp.gutio.externals
+package jp.gutio.registration.externals
 
 import com.google.api.client.googleapis.auth.oauth2.{GoogleIdToken, GoogleIdTokenVerifier}
 import com.google.api.client.googleapis.javanet.GoogleNetHttpTransport
 import com.google.api.client.json.jackson2.JacksonFactory
-import jp.gutio.settings.GoogleIdVerifierSetting
+import jp.gutio.registration.settings.GoogleIdVerifierSetting
 
 import scala.util.control.Exception.allCatch
 

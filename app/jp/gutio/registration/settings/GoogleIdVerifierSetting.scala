@@ -1,4 +1,4 @@
-package jp.gutio.settings
+package jp.gutio.registration.settings
 
 import com.typesafe.config.Config
 
