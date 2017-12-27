@@ -2,6 +2,9 @@ package jp.gutio.registration.settings
 
 import com.typesafe.config.Config
 
+/**
+  * Created by Daisuke Yamaguchi on 2017/12/25.
+  */
 case class GoogleIdVerifierSetting(
   iosClientId : Option[String],
   androidClientId : Option[String],

@@ -7,6 +7,9 @@ import jp.gutio.registration.settings.GoogleIdVerifierSetting
 
 import scala.util.control.Exception.allCatch
 
+/**
+  * Created by Daisuke Yamaguchi on 2017/12/27.
+  */
 object GoogleIdVerifier {
   var settingOpt : Option[GoogleIdVerifierSetting] = None
   var clientIds : List[String] = Nil
