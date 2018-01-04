@@ -39,10 +39,10 @@ object GoogleIdVerifier {
       if (clientIds.contains(payload.getAuthorizedParty)) {
         payload
       } else {
-        throw new Exception
+        throw new Exception // TODO エラー体系
       }
     } else {
-      throw new Exception
+      throw new Exception // TODO エラー体系
     }
   }
 }
