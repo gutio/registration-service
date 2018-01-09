@@ -14,7 +14,7 @@ case class GoogleIdVerifierSetting(
 object GoogleIdVerifierSetting {
   implicit val loader =
     new BaseConfigLoader[GoogleIdVerifierSetting] {
-      def load(rootConfig: Config, path: String): GoogleIdVerifierSetting = {
+      override def load(rootConfig: Config, path: String): GoogleIdVerifierSetting = {
         val config = rootConfig.getConfig(path)
         GoogleIdVerifierSetting(
           iosClientId = wrapOpt(config, "iosClientId"){_.getString(_)},

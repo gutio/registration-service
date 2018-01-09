@@ -10,7 +10,7 @@ import play.api.inject.{ApplicationLifecycle, Module}
   * Created by Daisuke Yamaguchi on 2017/12/27.
   */
 class GoogleIdVerifierModule extends Module {
-  def bindings(environment: Environment, configuration: Configuration) =
+  override def bindings(environment: Environment, configuration: Configuration) =
     Seq(bind[GoogleIdVerifierInitializer].toSelf.eagerly)
 }
 
