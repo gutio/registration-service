@@ -11,7 +11,7 @@ libraryDependencies += guice
 libraryDependencies += "com.google.api-client" % "google-api-client" % "1.23.0"
 libraryDependencies += "org.scalatestplus.play" %% "scalatestplus-play" % "3.1.2" % Test
 
-libraryDependencies += "com.dripower" %% "play-circe" % "2608.5"
+libraryDependencies += "com.github.tototoshi" %% "play-json4s-native" % "0.8.0"
 
 libraryDependencies ++= Seq(
   "com.h2database"  %  "h2"                           % "1.4.196", // your jdbc driver here

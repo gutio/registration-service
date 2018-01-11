@@ -1,0 +1,3 @@
+package infos
+
+trait InfoBase {}
