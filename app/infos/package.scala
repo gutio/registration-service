@@ -8,7 +8,9 @@ package object infos {
   // そのうちInfoとまとめて自動生成したほうが良さそう
   val infoClasses = List(
     // 基本
-    classOf[EnvelopeInfo]
+    classOf[EnvelopeInfo],
+    classOf[MultiCallRequestInfo],
+    classOf[MultiCallResponseInfo]
   )
 
   object InfoHints extends TypeHints {
