@@ -6,6 +6,9 @@
 # API 系
 GET     /api/google_setting controllers.SettingController.getGoogleSetting
 
+# RPC
+POST    /api/rpc/call       controllers.RPCController.call
+
 # 静的ページ構成
 GET     /               controllers.Assets.at(path="/public", file = "index.html")
 GET     /*file          controllers.Assets.at(path="/public", file)
