@@ -10,7 +10,10 @@ package object infos {
     // 基本
     classOf[EnvelopeInfo],
     classOf[MultiCallRequestInfo],
-    classOf[MultiCallResponseInfo]
+    classOf[MultiCallResponseInfo],
+    // 個別RPC
+    classOf[OriginalAccountCreateRequestInfo],
+    classOf[OriginalAccountCreateResponseInfo]
   )
 
   object InfoHints extends TypeHints {
