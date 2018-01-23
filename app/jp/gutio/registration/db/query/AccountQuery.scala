@@ -56,4 +56,11 @@ object AccountQuery extends QueryBase {
       QueryDSL.delete.from(Account).where.eq(Account.column.id, id)
     }
   }
+
+  def getBySessionKey(sessionKey : String)(implicit property: ActionProperty) = get(property) {
+    val t = Account.syntax
+    withSQL{
+      QueryDSL.select.from(Account as t).where.eq(t.sessionKey, sessionKey)
+    }.map(Account.apply(t.resultName))
+  }
 }

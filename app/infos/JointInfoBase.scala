@@ -1,0 +1,5 @@
+package infos
+
+trait JointInfoBase {
+
+}
