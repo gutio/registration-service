@@ -13,7 +13,9 @@ package object infos {
     classOf[MultiCallResponseInfo],
     // 個別RPC
     classOf[OriginalAccountCreateRequestInfo],
-    classOf[OriginalAccountCreateResponseInfo]
+    classOf[OriginalAccountCreateResponseInfo],
+    classOf[OriginalAccountLoginRequestInfo],
+    classOf[OriginalAccountLoginResponseInfo]
   )
 
   object InfoHints extends TypeHints {

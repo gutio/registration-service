@@ -56,4 +56,11 @@ object AccountQuery extends QueryBase {
       QueryDSL.delete.from(Account).where.eq(Account.column.id, id)
     }
   }
+
+  def getByAccessTokenForUpdate(accessToken : String)(implicit property: ActionProperty) = get(property) {
+    val t = Account.syntax
+    withSQL{
+      QueryDSL.select.from(Account as t).where.eq(t.accessToken, accessToken).forUpdate
+    }.map(Account.apply(t.resultName))
+  }
 }
