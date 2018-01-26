@@ -12,7 +12,9 @@ import infos._
   * Created by Daisuke Yamaguchi on 2018/1/10.
   */
 @Singleton
-class RPCController @Inject()(cc: ControllerComponents, json4s: Json4s) extends ControllerBase(cc, json4s) {
+class RPCController @Inject()(cc: ControllerComponents, json4s: Json4s) extends ControllerBase[RPCAuthenticateInfo](cc, json4s) {
+
+  override def auth(authenticate : RPCAuthenticateInfo) = true // TODO 現状Anonymousしか無いからとりあえず
 
   def call() = Anonymous[RequestInfoBase[_ <: ResponseInfoBase]] {(request, property) =>
     request.run()(property)

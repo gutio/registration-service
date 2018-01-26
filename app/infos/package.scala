@@ -11,6 +11,8 @@ package object infos {
     classOf[EnvelopeInfo],
     classOf[MultiCallRequestInfo],
     classOf[MultiCallResponseInfo],
+    // 認証
+
     // 個別RPC
     classOf[OriginalAccountCreateRequestInfo],
     classOf[OriginalAccountCreateResponseInfo]
