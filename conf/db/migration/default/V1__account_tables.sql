@@ -7,6 +7,7 @@ CREATE TABLE IF NOT EXISTS Account (
 );
 
 CREATE UNIQUE INDEX UAccount_AccessToken ON Account(accessToken);
+CREATE UNIQUE INDEX UAccount_SessionKey ON Account(sessionKey);
 
 --
 
